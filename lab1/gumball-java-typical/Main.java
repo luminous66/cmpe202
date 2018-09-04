@@ -6,8 +6,8 @@ public class Main {
 		GumballMachine gumballMachine = new GumballMachine(5);
 
 		System.out.println(gumballMachine);
-
-		gumballMachine.insertQuarter( 25 );
+		gumballMachine.turnCrank();
+		gumballMachine.insertQuarter( 0 );
 		gumballMachine.turnCrank();
 
 		System.out.println(gumballMachine);
@@ -16,7 +16,26 @@ public class Main {
 		gumballMachine.turnCrank();
 		gumballMachine.insertQuarter( 25 );
 		gumballMachine.turnCrank();
-
+		gumballMachine.insertQuarter( 25 );
+		gumballMachine.turnCrank();
+		gumballMachine.insertQuarter( 25 );
+		gumballMachine.turnCrank();
+		gumballMachine.insertQuarter( 25 );
+		gumballMachine.turnCrank();
+		gumballMachine.insertQuarter( 25 );
+		gumballMachine.turnCrank();
+		gumballMachine.insertQuarter( 25 );
+		gumballMachine.turnCrank();
+		gumballMachine.insertQuarter( 25 );
+		gumballMachine.turnCrank();
+		gumballMachine.insertQuarter( 25 );
+		gumballMachine.turnCrank();
+		gumballMachine.insertQuarter( 25 );
+		gumballMachine.turnCrank();
+		gumballMachine.insertQuarter( 25 );
+		gumballMachine.turnCrank();
+		gumballMachine.insertQuarter( 25 );
+		gumballMachine.turnCrank();
 		System.out.println(gumballMachine);
 	}
 }
