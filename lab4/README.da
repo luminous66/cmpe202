@@ -1,0 +1,45 @@
+
+1. CRC：
+
++--------------------------------------------------------------------+
+|                              FreeTable                             |
++--------------------------------------------------------------------+
+| notify WaitList that one table is free                   | WaiList |
++----------------------------------------------------------+---------+
+| setState to occupied if receive "Table Occupied" message |         |
++----------------------------------------------------------+---------+
+
+
+
+
++--------------------------------------------------------------------------------------+
+|                                       WaitList                                       |
++--------------------------------------------------------------------------------------+
+| add a customer to the list                                               | Customer  |
++--------------------------------------------------------------------------+-----------+
+| check accommodated party in line                                         | FreeTable |
++--------------------------------------------------------------------------+-----------+
+| send "Table Ready" message                                               |           |
++--------------------------------------------------------------------------+-----------+
+| update WaitList，delete customer                                         |           |
++--------------------------------------------------------------------------+-----------+
+| if receive "leave" message, give free table to the next Party in line    |           |
++--------------------------------------------------------------------------+-----------+
+| if receive "confirm" message, set customer state to "Done", and send     |           |
+|"Table Occupied" message to FreeTable                                     |           |
++--------------------------------------------------------------------------+-----------+
+
+
++-----------------------------------------------------------------------------+
+|                                   Customer                                  |
++-----------------------------------------------------------------------------+
+| notify WaitList to update by sending message "Confirm" or "Leave" | WaiList |
++-------------------------------------------------------------------+---------+
+
+2. I chose State and Observer design pattern in my Design. 
+  2.1 A change to a waitlist requires changing customers and table, and you don't know 
+  which customer need to be changed, so I need to use Observer design pattern.
+  2.2 Table's and customer's behavior depend on their state and they must change their 
+  behavior at run-time depending on that state.
+
+3.WaitList play "WaitList" role, Customer play "Customer" role and Freetable play "Freetable" role in the pattern.
