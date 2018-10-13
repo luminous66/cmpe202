@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=ChooseBurger
+comment1.params=d\ p\ i
+comment1.target=ChooseBurger(java.lang.String,\ java.lang.Double,\ java.lang.String)
+comment2.params=d
+comment2.target=ChooseBurger(java.lang.String)
+comment3.params=d\ p
+comment3.target=ChooseBurger(java.lang.String,\ java.lang.Double)
+comment4.params=
+comment4.target=void\ printDescription()
+numComments=5

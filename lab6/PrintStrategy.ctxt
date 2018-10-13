@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=PrintStrategy
+comment0.text=\n\ Print\ Stragegy\ for\ orders\n
+comment1.params=theOder
+comment1.target=void\ print(Composite)
+numComments=2

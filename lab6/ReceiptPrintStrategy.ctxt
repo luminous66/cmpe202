@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=ReceiptPrintStrategy
+comment1.params=order
+comment1.target=void\ print(Composite)
+numComments=2
